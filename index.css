@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 1;
+  }
+  #header {
+    background-color:#032541;
+    height: 22vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #heading_txt{
+      font-family: monospace;
+      font-size: 14vh;
+      color: greenyellow
+  }
+  #caption-bar{
+      background-color: red;
+      height: 8vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  #text-caption {
+      font-family: monospace;
+      font-size: 6vh;
+      color: white;
+  }
+  #main {
+      background-color: #0e141e;
+      height: 60vh;
+      display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #contact{
+      background-color:#39424e;
+      height: 10vh;
+      display: flex;
+      flex-direction: center;
+      justify-content: center;
+      
+  }
+  #last{
+      width:150ch;
+  }
+  #abt{
+      width: 10ch;
+      font-family: monospace;
+      color: chartreuse;
+      font-size: 6vh;
+  }
+
+  #headerabt {
+    background-color:#032541;
+    height: 18vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #heading_txtabt{
+      font-family: monospace;
+      font-size: 12vh;
+      color: greenyellow
+  }
+  #mainabt {
+    background-color: #0e141e;
+      height: 64vh;
+      display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.flip-card {
+  background-color: transparent;
+  width: 320px;
+  height: 280px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color:rgb(25, 39, 235);
+  color: white;
+  font-family: monospace;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
+.draw-border {
+    box-shadow: inset 0 0 0 4px #58cdd1;
+    color: #58afd1;
+    -webkit-transition: color 0.25s 0.0833333333s;
+    transition: color 0.25s 0.0833333333s;
+    position: relative;
+  }
+  
+  .draw-border::before,
+  .draw-border::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 0rem;
+    height: 0;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .draw-border::before {
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+  }
+  
+  .draw-border::after {
+    border-top-width: 4px;
+    border-right-width: 4px;
+  }
+  
+  .draw-border:hover {
+    color: #ffe593;
+  }
+  
+  .draw-border:hover::before,
+  .draw-border:hover::after {
+    border-color: #eb196e;
+    -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .draw-border:hover::before {
+    -webkit-transition-delay: 0s, 0s, 0.25s;
+    transition-delay: 0s, 0s, 0.25s;
+  }
+  
+  .draw-border:hover::after {
+    -webkit-transition-delay: 0s, 0.25s, 0s;
+    transition-delay: 0s, 0.25s, 0s;
+  }
+  
+  .btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
+    font: 700 1.2rem 'Roboto Slab', sans-serif;
+    padding: 0.75em 2em;
+    letter-spacing: 0.05rem;
+    margin: 1em;
+    width: 13rem;
+  }
+  
+  .btn:focus {
+    outline: 2px dotted #55d7dc;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+
+
+  /* Style the button and place it in the middle of the container/image */
+  .container .btn {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .container .btn:hover {
+    background-color: black;
+  }
+
+  #mainabt1 {
+    background-color: #0e141e;
+      height: 20vh;
+      display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+#mainabt2 {
+    background-color: #0e141e;
+      height: 20vh;
+      display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+#answer {
+    height: 20vh;
+    background-color: #0e141e
+}
+
+#advice {
+  font-size: 8vh;
+  font-family: monospace;
+  color: #ffe593;
+}
+#answer {
+  font-size: 8vh;
+  font-family: monospace;
+  color: #ffe593;
+}
+
+#title{
+  font-size: 8vh;
+  font-family: monospace;
+  color: #ffe593;
+}
+#artist {
+  font:monospace;
+  font-size:6vh;
+  color:  #eb196e;
+}
+#year{
+  font-size: 4vh;
+  font-family: monospace;
+  color: #ffe593;
+}
+#web_url{
+  font-size: 3vh;
+  font-family: monospace;
+  color: #eb196e;
+}
+
+#moviedata {
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#title1{
+  font-size: 8vh;
+  font-family: monospace;
+  color: #ffe593;
+}
+
+#tagline {
+  font-size: 5vh;
+  font-family: monospace;
+  color: white;
+}
+
+#genres {
+  font-size: 4vh;
+  font-family: monospace;
+  color: #eb196e;
+}
+
+#rating {
+  font-size: 6vh;
+  font-family: monospace;
+  color: yellow
+}
+
+#overview {
+  color:#55d7dc;
+}
+#mainabtop {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  align-items: center;
+}
