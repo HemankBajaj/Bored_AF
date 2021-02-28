@@ -1,6 +1,6 @@
 
-require('dotenv').config();
-var api = process.env.API_KEY
+//require('dotenv').config();
+//var api = process.env.API_KEY
 
 // var y = Math.floor(Math.random() * 450 + 1);
 // var show_id = y + 100;
@@ -13,7 +13,7 @@ console.log('Running Perfectly');
 
 function movie() {
     
-    //var api = '55770b52b49ce303ad654769d927a2ba';
+    var api = '55770b52b49ce303ad654769d927a2ba';
     var y = Math.floor(Math.random() * 450 + 1);
     var show_id = y + 100;
     var master = "https://api.themoviedb.org/3/movie/";
