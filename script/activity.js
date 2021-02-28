@@ -4,7 +4,7 @@ function display(str){
     text.innerHTML = str;
 }
 
-var master = 'http://www.boredapi.com/api/activity?type=';
+var master = 'https://www.boredapi.com/api/activity?type=';
 
 function random() {
     url = 'http://www.boredapi.com/api/activity/';
