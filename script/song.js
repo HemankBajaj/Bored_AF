@@ -1,4 +1,4 @@
-var url = "http://davidpots.com/jakeworry/017%20JSON%20Grouping,%20part%203/data.json";
+var url = "https://davidpots.com/jakeworry/017%20JSON%20Grouping,%20part%203/data.json";
 
 var counter = 0;
 var img = document.createElement("img");
