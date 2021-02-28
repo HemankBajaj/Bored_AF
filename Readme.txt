@@ -1,3 +1,6 @@
+
+Hosted on https://hemankbajaj.github.io/Bored_AF/index.html
+
 Bored_AF
 This is a simple Web App developed to suggest music, movies, etc. to the user when "bored".
 Various different API are used in this Web App.
