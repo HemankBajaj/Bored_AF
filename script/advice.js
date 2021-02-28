@@ -1,4 +1,4 @@
-var url = 'http://api.adviceslip.com/advice';
+var url = 'https://api.adviceslip.com/advice';
 
 function display(str){
     var text =  document.getElementById("advice");
